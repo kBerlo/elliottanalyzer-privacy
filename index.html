@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ElliottAnalyzer – Datenschutz / Privacy</title>
+<style>
+  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 820px; margin: 0 auto; padding: 24px 16px 64px; line-height: 1.55; color: #1c1b1f; background: #fffbfe; }
+  h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
+  h2 { font-size: 1.2rem; margin-top: 2rem; }
+  .meta { color: #555; font-size: 0.9rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.92rem; }
+  th, td { border: 1px solid #ccc; padding: 6px 8px; vertical-align: top; text-align: left; }
+  th { background: #eee8f4; }
+  .wrap { overflow-x: auto; }
+  nav a { margin-right: 12px; }
+  hr { margin: 3rem 0; border: none; border-top: 1px solid #ccc; }
+</style>
+</head>
+<body>
+<nav><a href="#de">Deutsch</a><a href="#en">English</a></nav>
+
+<section id="de">
+<h1>Datenschutzerklärung ElliottAnalyzer</h1>
+<p class="meta">Stand: 18.11.2026</p>
+
+<h2>Verantwortlicher</h2>
+<p>Kevin Berlit<br>An der Bracht 5<br>98593 Floh-Seligenthal<br>Deutschland<br>E-Mail: <a href="mailto:widgetmeandroid@gmail.com">widgetmeandroid@gmail.com</a></p>
+
+<h2>Grundsatz</h2>
+<p>ElliottAnalyzer hat keinen eigenen Server und kein Benutzerkonto. Alle Einstellungen, API-Schlüssel, die Watchlist, der Verlauf und zwischengespeicherte Kurse liegen ausschließlich im privaten App-Speicher auf deinem Gerät. Es gibt keine Werbung, keine Analyse- oder Tracking-Dienste.</p>
+
+<h2>Datenübertragungen</h2>
+<div class="wrap"><table>
+<tr><th>Empfänger</th><th>Wann</th><th>Was wird übertragen</th><th>Rechtsgrundlage</th></tr>
+<tr><td>Gewählter Kursanbieter (Twelve Data Pte. Ltd., Singapur, oder EODHD / EOD Historical Data, Unicorn Data Services SAS, Frankreich)</td><td>Bei jeder Analyse, Namenssuche und der Watchlist-Prüfung im Hintergrund (alle 6 Stunden)</td><td>Gesuchtes Symbol bzw. Suchbegriff, dein API-Schlüssel, technisch bedingt deine IP-Adresse</td><td>Art. 6 Abs. 1 lit. b DSGVO (von dir angeforderte Funktion)</td></tr>
+<tr><td>Optional: Google (Gemini API, Google Ireland Ltd.)</td><td>Nur wenn du die KI-Prüfung aktivierst und „Prüfen lassen“ antippst</td><td>Wendepunkte und Szenarien der App, Regel-Einstellungen, dein API-Schlüssel, IP-Adresse. Bei Kursen von Twelve Data nur abgeleitete Werte (Abstände in % zum aktuellen Kurs, Abstände in Kerzen) – ohne Symbol, Kurse und Datum; sonst mit Symbol, Datum und Kurs. Bei der Screenshot-Auswertung per KI: das gewählte Bild</td><td>Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch Aktivierung)</td></tr>
+<tr><td>Optional: Anthropic (Claude API, Anthropic PBC, USA)</td><td>Wie oben, bei Auswahl von Claude</td><td>Wie oben</td><td>Art. 6 Abs. 1 lit. a DSGVO; Übermittlung in die USA (Standardvertragsklauseln des Anbieters)</td></tr>
+<tr><td>Optional: Groq (GroqCloud API, Groq, Inc., USA)</td><td>Wie oben, bei Auswahl von Groq</td><td>Wie oben</td><td>Art. 6 Abs. 1 lit. a DSGVO; Übermittlung in die USA (Standardvertragsklauseln des Anbieters)</td></tr>
+<tr><td>Google Play (Google Ireland Ltd.)</td><td>Beim Kauf von „Pro“ und beim Prüfen bestehender Käufe</td><td>Kaufabwicklung vollständig über dein Google-Konto; die App erhält nur den Kaufstatus, keine Zahlungsdaten</td><td>Art. 6 Abs. 1 lit. b DSGVO (Vertrag)</td></tr>
+<tr><td>Google-Play-Dienste (Google Ireland Ltd.)</td><td>Bei der ersten Screenshot-Auswertung</td><td>Einmaliges Laden des Texterkennungs-Modells (ML Kit) durch die Play-Dienste; die Texterkennung selbst läuft auf dem Gerät, das Bild verlässt es nicht. Google kann dabei technische Nutzungsdaten erfassen</td><td>Art. 6 Abs. 1 lit. b DSGVO (von dir angeforderte Funktion)</td></tr>
+</table></div>
+<p>CSV-Dateien und Screenshots, die du importierst, werden nur auf dem Gerät ausgewertet – außer du wählst ausdrücklich „Andere Plattform (KI)“ (siehe KI-Anbieter oben).</p>
+<p>Es werden keine Namen, E-Mail-Adressen, Standortdaten, Kontakte oder sonstigen persönlichen Inhalte übertragen. Für die Verarbeitung bei den Anbietern gelten deren Datenschutzbestimmungen. Bei Gratisplänen einzelner KI-Anbieter können Eingaben außerhalb von EU/EWR, Schweiz und UK zur Verbesserung der Modelle genutzt werden.</p>
+
+<h2>Absturzberichte</h2>
+<p>Stürzt die App ab, wird ein technischer Fehlerbericht (Fehlermeldung, Programmstelle, App- und Android-Version, Gerätemodell) nur lokal gespeichert. Beim nächsten Start kannst du ihn selbst über das Teilen-Menü versenden oder verwerfen. Ohne deine Aktion verlässt er das Gerät nicht.</p>
+
+<h2>Benachrichtigungen und Widget</h2>
+<p>Die Watchlist-Prüfung läuft über den Android-Dienst WorkManager auf deinem Gerät. Benachrichtigungen werden lokal erzeugt; es gibt keinen Push-Dienst.</p>
+
+<h2>Speicherdauer und Löschung</h2>
+<p>Zwischengespeicherte Kurse von Werten außerhalb von Verlauf und Watchlist werden nach 7 Tagen automatisch gelöscht, alle übrigen spätestens nach 30 Tagen. Über „Verlauf und Zwischenspeicher leeren“ oder das Deinstallieren der App werden alle Daten entfernt.</p>
+
+<h2>Hinweise zu Kursdaten von Twelve Data</h2>
+<p>Kurse von Twelve Data ruft die App mit deinem eigenen Schlüssel direkt bei Twelve Data ab („Data provided by Twelve Data“). Es gelten die <a href="https://twelvedata.com/terms">Nutzungsbedingungen von Twelve Data</a>. Die Pläne Grow, Pro und Ultra decken nur private, nicht-kommerzielle Nutzung ohne Weitergabe ab; kommerzielle Nutzung erfordert mindestens den Plan Venture. Endet dein Twelve-Data-Abo, müssen zwischengespeicherte Kurse innerhalb von 30 Tagen gelöscht werden – die App löscht sie spätestens nach 30 Tagen automatisch, sofort über „Verlauf und Zwischenspeicher leeren“. Charts mit Twelve-Data-Kursen lassen sich in der App nicht teilen.</p>
+
+<h2>Deine Rechte</h2>
+<p>Da wir selbst keine Daten erhalten, richten sich Auskunfts- und Löschanfragen zu übertragenen Daten an den jeweiligen Kurs- bzw. KI-Anbieter. Bei Fragen wende dich an die oben genannte E-Mail-Adresse. Du hast das Recht auf Beschwerde bei einer Datenschutz-Aufsichtsbehörde; zuständig ist der Thüringer Landesbeauftragte für den Datenschutz und die Informationsfreiheit (TLfDI).</p>
+
+<h2>Änderungen</h2>
+<p>Diese Erklärung wird bei Bedarf angepasst; es gilt die jeweils hier veröffentlichte Fassung.</p>
+</section>
+
+<hr>
+
+<section id="en" lang="en">
+<h1>Privacy Policy ElliottAnalyzer</h1>
+<p class="meta">Last updated: 18 November 2026</p>
+
+<h2>Controller</h2>
+<p>Kevin Berlit<br>An der Bracht 5<br>98593 Floh-Seligenthal<br>Germany<br>Email: <a href="mailto:widgetmeandroid@gmail.com">widgetmeandroid@gmail.com</a></p>
+
+<h2>Principle</h2>
+<p>ElliottAnalyzer has no server of its own and no user account. All settings, API keys, the watchlist, the history and cached prices are stored only in the app's private storage on your device. There are no ads and no analytics or tracking services.</p>
+
+<h2>Data transfers</h2>
+<div class="wrap"><table>
+<tr><th>Recipient</th><th>When</th><th>What is transferred</th><th>Legal basis</th></tr>
+<tr><td>Selected data provider (Twelve Data Pte. Ltd., Singapore, or EODHD / EOD Historical Data, Unicorn Data Services SAS, France)</td><td>On every analysis, name search and the background watchlist check (every 6 hours)</td><td>The symbol or search term, your API key and, for technical reasons, your IP address</td><td>Art. 6(1)(b) GDPR (function requested by you)</td></tr>
+<tr><td>Optional: Google (Gemini API, Google Ireland Ltd.)</td><td>Only if you enable the AI review and tap “Review”</td><td>The app's turning points and scenarios, rule settings, your API key, IP address. For Twelve Data prices only derived values (distances in % to the current price, distances in candles) – without symbol, prices or dates; otherwise with symbol, dates and prices. For AI screenshot reading: the selected image</td><td>Art. 6(1)(a) GDPR (consent by enabling)</td></tr>
+<tr><td>Optional: Anthropic (Claude API, Anthropic PBC, USA)</td><td>As above, when Claude is selected</td><td>As above</td><td>Art. 6(1)(a) GDPR; transfer to the USA (provider's standard contractual clauses)</td></tr>
+<tr><td>Optional: Groq (GroqCloud API, Groq, Inc., USA)</td><td>As above, when Groq is selected</td><td>As above</td><td>Art. 6(1)(a) GDPR; transfer to the USA (provider's standard contractual clauses)</td></tr>
+<tr><td>Google Play (Google Ireland Ltd.)</td><td>When buying “Pro” and when checking existing purchases</td><td>The purchase is handled entirely through your Google account; the app only receives the purchase status, no payment details</td><td>Art. 6(1)(b) GDPR (contract)</td></tr>
+<tr><td>Google Play services (Google Ireland Ltd.)</td><td>On the first screenshot import</td><td>One-time download of the text-recognition model (ML Kit) by Play services; the recognition itself runs on the device and the image does not leave it. Google may collect technical usage data in the process</td><td>Art. 6(1)(b) GDPR (function requested by you)</td></tr>
+</table></div>
+<p>CSV files and screenshots you import are processed on the device only – unless you explicitly choose “Other platform (AI)” (see AI providers above).</p>
+<p>No names, email addresses, location data, contacts or other personal content are transferred. Processing by the providers is subject to their privacy policies. On free plans, some AI providers may use inputs from outside the EU/EEA, Switzerland and the UK to improve their models.</p>
+
+<h2>Crash reports</h2>
+<p>If the app crashes, a technical error report (error message, code location, app and Android version, device model) is stored locally only. On the next start you can send it yourself via the share menu or discard it. It never leaves the device without your action.</p>
+
+<h2>Notifications and widget</h2>
+<p>The watchlist check runs via the Android WorkManager service on your device. Notifications are created locally; there is no push service.</p>
+
+<h2>Retention and deletion</h2>
+<p>Cached prices for instruments outside the history and watchlist are deleted automatically after 7 days, all others after 30 days at the latest. “Clear history and cache” or uninstalling the app removes all data.</p>
+
+<h2>Twelve Data price data</h2>
+<p>The app fetches Twelve Data prices directly from Twelve Data with your own key (“Data provided by Twelve Data”). The <a href="https://twelvedata.com/terms">Twelve Data terms of use</a> apply. The Grow, Pro and Ultra plans cover personal, non-commercial use without redistribution only; commercial use requires at least the Venture plan. If your Twelve Data subscription ends, cached prices must be deleted within 30 days – the app deletes them automatically after 30 days at the latest, immediately via “Clear history and cache”. Charts with Twelve Data prices cannot be shared from the app.</p>
+
+<h2>Your rights</h2>
+<p>As we do not receive any data ourselves, requests for access or deletion regarding transferred data should be addressed to the respective data or AI provider. For questions, contact the email address above. You have the right to lodge a complaint with a data protection supervisory authority.</p>
+</section>
+</body>
+</html>
